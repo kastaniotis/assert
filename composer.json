@@ -1,0 +1,33 @@
+{
+  "name": "iconic/assert",
+  "description": "Simple Assert Library",
+  "type": "library",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.1",
+    "phpstan/phpstan": "^2.1"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Iconic\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Iconic\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Dimitris Kastaniotis",
+      "email": "d.kastaniotis@iconic.gr"
+    }
+  ],
+  "scripts": {
+    "test": "vendor/bin/phpunit && vendor/bin/phpstan"
+  }
+}
